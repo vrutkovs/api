@@ -1,0 +1,27 @@
+{
+    "apiVersion": "config.openshift.io/v1",
+    "kind": "FeatureGate",
+    "metadata": {
+        "annotations": {
+            "include.release.openshift.io/ibm-cloud-managed": "false-except-for-the-config-operator"
+        },
+        "creationTimestamp": null,
+        "name": "cluster"
+    },
+    "spec": {
+        "featureSet": "CustomNoUpgrade"
+    },
+    "status": {
+        "featureGates": [
+            {
+                "disabled": null,
+                "enabled": [
+                    {
+                        "name": "ShortCertRotation"
+                    }
+                ],
+                "version": ""
+            }
+        ]
+    }
+}
